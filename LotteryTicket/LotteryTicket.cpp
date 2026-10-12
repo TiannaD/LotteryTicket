@@ -1,6 +1,7 @@
 #include <iostream>
 #include <random>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -31,7 +32,13 @@ string string6 = to_string(value6);
 
 int main() {
 
-	cout << string1 << string2 << string3 << string4 << string5 << string6 ;
+	string1.append(string2);
+	string1.append(string3);
+	string1.append(string4);
+	string1.append(string5);
+	string1.append(string6);
+
+	cout << "Lottery Ticket Number: " << string1 << endl;
 
 	return 0;
 }
